@@ -3,6 +3,16 @@
     src: url(".\assets\fonts\IBM_Plex_Mono\IBMPlexMono-BoldItalic.ttf");
   }
   
+@font-face {
+    font-family: 'IBMPlexMono-Bold';
+    src: url(".\assets\fonts\IBM_Plex_Mono\IBMPlexMono-Bold.ttf");
+  }
+  
+@font-face {
+    font-family: 'IBMPlexMono-Regular';
+    src: url("src/assets/fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf");
+  }
+  
   @font-face {
     font-family: 'RobotoMono-BoldItalic';
     src: url(".\assets\fonts\Roboto_Mono\static\RobotoMono-BoldItalic.ttf");
