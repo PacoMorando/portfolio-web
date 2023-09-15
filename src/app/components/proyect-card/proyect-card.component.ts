@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./proyect-card.component.css']
 })
 export class ProyectCardComponent {
-
+  protected redirectToProject() {
+    console.log("CARD PICADA");
+  }
 }

@@ -1,45 +1,42 @@
-<!-- <div  style="background-color: bisque;"> -->
-<div class="mb-5">
-    <!-- <img src="..." class="card-img-top" alt="..."> -->
-    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img"
-        aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <rect width="100%" height="100%" fill="#868e96"></rect>
-    </svg>
-    <div class="card-body pt-3">
-        <h5 style="font-family: RobotoMono-Bold;" class="card-title">Proyect title</h5>
-        <p style="font-family: RobotoMono-Regular;" class="card-text">Some quick example text to build on the card title
-            and make up the bulk of the card's
-            content.</p>
-        <!-- <a href="#" class="stretched-link"></a> -->
-    </div>
+<ul style="list-style-type: none; padding-left: 0;">
+    <li class="mb-5">
+        <div class="row proyect-li py-4 px-3" (click)="redirectToProject()">
+            <div class="col-md">
+                <h4 style="font-family: RobotoMono-Bold;" class="card-title">Multiplatform game</h4>
+                <p>Java, TypeScript, MySQL, <br> SQLite, Angular, <br> AndroidStudio.</p>
+            </div>
+            <div class="col">
+                <p style="font-family: RobotoMono-Regular;" class="card-text">
+                    No one shall be subjected to arbitrary arrest, detention or
+                    exile. Everyone is entitled in full equality to a fair and public hearing by an independent and
+                    impartial tribunal, in the determination of his rights and obligations and of any criminal charge
+                    against him.
+                </p>
+
+            </div>
+        </div>
+
+    </li>
+</ul>
+
+<!-- Button Modal -->
+<div class="pt-5 pb-5">
+    <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal"
+        data-bs-target="#openGameModal">OPEN MODAL</button>
 </div>
 
-<div class="mb-5">
-    <!-- <img src="..." class="card-img-top" alt="..."> -->
-    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img"
-        aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <rect width="100%" height="100%" fill="#868e96"></rect>
-    </svg>
-    <div class="card-body pt-3">
-        <h5 style="font-family: RobotoMono-Bold;" class="card-title">Proyect title</h5>
-        <p style="font-family: RobotoMono-Regular;" class="card-text">Some quick example text to build on the card title
-            and make up the bulk of the card's
-            content.</p>
-        <!-- <a href="#" class="stretched-link"></a> -->
-    </div>
-</div>
 
-<div class="mb-5">
-    <!-- <img src="..." class="card-img-top" alt="..."> -->
-    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img"
-        aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <rect width="100%" height="100%" fill="#868e96"></rect>
-    </svg>
-    <div class="card-body pt-3">
-        <h5 style="font-family: RobotoMono-Bold;" class="card-title">Proyect title</h5>
-        <p style="font-family: RobotoMono-Regular;" class="card-text">Some quick example text to build on the card title
-            and make up the bulk of the card's
-            content.</p>
-        <!-- <a href="#" class="stretched-link"></a> -->
+<!-- Open Modal -->
+<div id="openGameModal" class="modal fade" tabindex="-1" aria-labelledby="isFinishedModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="p-3">
+                <h1 class="modal-title fs-5" id="isFinishedModalLabel">Seleicciona una partida</h1>
+            </div>
+            
+            <div class="p-2 text-end">
+                <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+            </div>
+        </div>
     </div>
 </div>
