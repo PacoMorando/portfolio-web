@@ -29,6 +29,6 @@
     height: 20px; /* Altura de la línea inferior y derecha */
 }
 
-#openGameModal .modal-content {
+#proyectModal .modal-content {
     border-radius: 0; /* Establece el radio de borde en 0 para quitar el redondeo */
 }
