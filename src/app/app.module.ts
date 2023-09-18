@@ -3,13 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { LandingComponent } from './components/landing/landing.component';
-import { ProyectCardComponent } from './components/proyect-card/proyect-card.component';
+import { ProyectsComponent } from './components/proyects/proyects.component';
+import { MasterMindProyectComponent } from './components/proyects/master-mind-proyect/master-mind-proyect.component';
+import { GraphicRulerProyectComponent } from './components/proyects/graphic-ruler-proyect/graphic-ruler-proyect.component';
+import { ListagramProyectComponent } from './components/proyects/listagram-proyect/listagram-proyect.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
-    ProyectCardComponent
+    ProyectsComponent,
+    MasterMindProyectComponent,
+    GraphicRulerProyectComponent,
+    ListagramProyectComponent
   ],
   imports: [
     BrowserModule
