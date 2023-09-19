@@ -1,6 +1,7 @@
 .proyect-li {
     background-color: #ffffff00;
-    position: relative; /* Establece una posición relativa en el elemento li */
+    position: relative;
+    /* Establece una posición relativa en el elemento li */
     cursor: pointer;
 }
 
@@ -14,21 +15,51 @@
 .proyect-li:hover::before {
     top: 0;
     left: 0;
-    border-top-color: #000; /* Color de la línea superior */
-    border-left-color: #000; /* Color de la línea izquierda */
-    width: 20px; /* Ancho de la línea superior e izquierda */
-    height: 20px; /* Altura de la línea superior e izquierda */
+    border-top-color: #000;
+    /* Color de la línea superior */
+    border-left-color: #000;
+    /* Color de la línea izquierda */
+    width: 20px;
+    /* Ancho de la línea superior e izquierda */
+    height: 20px;
+    /* Altura de la línea superior e izquierda */
 }
 
 .proyect-li:hover::after {
     bottom: 0;
     right: 0;
-    border-bottom-color: #000; /* Color de la línea inferior */
-    border-right-color: #000; /* Color de la línea derecha */
-    width: 20px; /* Ancho de la línea inferior y derecha */
-    height: 20px; /* Altura de la línea inferior y derecha */
+    border-bottom-color: #000;
+    /* Color de la línea inferior */
+    border-right-color: #000;
+    /* Color de la línea derecha */
+    width: 20px;
+    /* Ancho de la línea inferior y derecha */
+    height: 20px;
+    /* Altura de la línea inferior y derecha */
 }
 
 #proyectModal .modal-content {
-    border-radius: 0; /* Establece el radio de borde en 0 para quitar el redondeo */
+    border-radius: 0;
+    /* Establece el radio de borde en 0 para quitar el redondeo */
+}
+
+#other-proyects {
+    font-family: RobotoMono-Bold;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#other-proyects li {
+    float: left;
+}
+
+#other-proyects li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding-right: 16px;
+    padding-top: 0;
+    /* cursor: pointer; */
 }

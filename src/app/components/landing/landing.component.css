@@ -1,0 +1,9 @@
+a {
+    font-family: RobotoMono-Bold;
+    font-size: small;
+    /* display: block; */
+    color: black;
+    text-align: center;
+    padding: 0;
+    /* cursor: pointer; */
+}
