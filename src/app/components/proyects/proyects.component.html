@@ -67,30 +67,22 @@
     <div class="modal-dialog modal-dialog-scrollable modal-xl">
         <div class="modal-content">
 
-            <div class="modal-body">
-                <div class="d-flex flex-row justify-content-between">
-                    <div>
-                        <h1 id="proyectModalLabel">{{proyectName}}</h1>
-                    </div>
-                    <div class="ps-2">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                </div>
+            <div class="modal-header">
+                <h1 id="proyectModalLabel">{{proyectName}}</h1>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <div class="modal-body">
                 <ng-container *ngComponentOutlet="componentSlected"></ng-container>
             </div>
 
-            <div class="modal-body">
-                <div class="d-flex flex-row justify-content-between">
-                    <div>
-                        <a href="">Aqui deberia de ir una listaa de links</a>
-                    </div>
-                    <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+            <div class="modal-footer pt-0">
+                <div class="d-flex flex-row-reverse justify-content-between">
+                    <button type="button" class="btn p-0" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
-            
+
         </div>
     </div>
 </div>

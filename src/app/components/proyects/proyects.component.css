@@ -1,7 +1,6 @@
 .proyect-li {
     background-color: #ffffff00;
     position: relative;
-    /* Establece una posición relativa en el elemento li */
     cursor: pointer;
 }
 
@@ -32,4 +31,8 @@
 
 #proyectModal .modal-content {
     border-radius: 0;
+}
+
+.modal-footer, .modal-header {
+    border: none;
 }
