@@ -6,17 +6,6 @@ a {
     padding: 0;
 }
 
-p,
-strong,
-h5 {
-    font-family: 'RobotoMono-Regular', monospace;
-}
-
-h1,
-h4 {
-    font-family: 'RobotoMono-Bold', monospace;
-}
-
 .icons-sn {
     margin-right: 20px;
     font-size: 1.6rem;

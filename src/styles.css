@@ -2,8 +2,19 @@
     font-family: 'RobotoMono-Bold';
     src: url(".\assets\fonts\Roboto_Mono\RobotoMono-Bold.ttf");
   }
-  
+
   @font-face {
     font-family: 'RobotoMono-Regular';
     src: url(".\assets\fonts\Roboto_Mono\RobotoMono-Regular.ttf");
+  }
+
+  p,
+  strong,
+  h5 {
+    font-family: 'RobotoMono-Regular', monospace;
+  }
+
+  h1,
+  h4 {
+    font-family: 'RobotoMono-Bold', monospace;
   }

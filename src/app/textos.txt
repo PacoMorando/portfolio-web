@@ -64,3 +64,44 @@ Although I still have a long way to go, I am excited to
 continue this journey in the professional field.
 
 Here's a glimpse of some of my personal projects:
+
+
+Multiplatform Game
+Java, TypeScript, MySQL,
+SQLite, AndroidStudio,
+Angular, SpringBoot.
+
+Exercise, a result of my learning in architecture and software 
+design. This project is based on a modular design, where the 
+application core/business logic is an independent module that 
+exposes the corresponding interfaces so it can be implemented by 
+different technologies for viewing and persistence.
+
+
+Graphic Ruler
+Java, AndroidStudio.
+
+An application that uses the system information of the device to 
+draw a ruler with 'physical' accuracy.
+I created this app imagining a tool that could be useful and 
+practical for me as an architect, so it could also be worthwhile 
+for other architects and designers.
+
+
+Listagram
+Java, SQLite
+AndroidStudio.
+
+This was my first experience programming a complete and functional 
+application.
+The decision to make a mobile app was because I wanted other 
+people to be able to download and use it easily so I could receive 
+feedback.
+
+
+This site
+Angular, TypeScript,
+Bootstrap.
+
+I made this website as a part of my learning in web development, and
+ as an exercise to implement a responsive design.
