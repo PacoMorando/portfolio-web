@@ -1,13 +1,49 @@
 a {
     font-family: RobotoMono-Bold;
-    font-size: small;
-    /* display: block; */
+    font-size: medium;
     color: black;
-    text-align: center;
+    text-align: left;
     padding: 0;
-    /* cursor: pointer; */
 }
 
-.icons-sn{
+p,
+strong,
+h5 {
+    font-family: 'RobotoMono-Regular', monospace;
+}
+
+h1,
+h4 {
+    font-family: 'RobotoMono-Bold', monospace;
+}
+
+.icons-sn {
     margin-right: 20px;
+    font-size: 1.6rem;
+    display: inline-block;
+    transition: transform 0.1s ease;
+}
+
+.icons-sn:hover {
+    transform: translateY(-5px);
+}
+
+
+#other-proyects {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#other-proyects li {
+    float: left;
+}
+
+#other-proyects li a {
+    display: block;
+    color: black;
+    text-align: left;
+    padding-right: 16px;
+    padding-top: 0;
 }

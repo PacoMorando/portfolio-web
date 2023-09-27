@@ -1,0 +1,66 @@
+ESPAÑOL:
+
+Francisco Morando
+
+Desarrolador Android y web radicado en México.
+
+Este es mi currículum
+
+Tecnologías que conozco:
+SpringBoot, Angular, AndroidStudio, Java, TypeScript, MySQL, SQLite, Git/Github, HTML, XML.
+
+Certificaciones
+
+Autodidacta, con 3 años de experiencia en el aprendizaje y 
+desarrollo frontend/backend para aplicaciones móviles y web, he 
+encontrado una nueva pasión en la programación.
+
+Fui formado como Arquitecto civil en la UDG, profesión en la que 
+tengo 14 años trabajando con equipos grandes y liderando algunos 
+equipos pequeños en diversas áreas de la profesión.
+
+Actualmente estoy muy motivado en convertirme de nuevo en 
+Arquitecto, pero esta vez de software, y con un gran interés por 
+el diseño y desarrollo de software.
+
+Aunque aún me queda camino por recorrer, estoy entusiasmado por 
+poder continuar este viaje en el ejercicio profesional. 
+Aquí una muestra de proyectos personales:
+
+
+
+
+
+
+
+
+ENGLISH:
+
+Francisco Morando
+
+Android and web developer based in México.
+
+Here is my personal resume
+
+Tecnologies i kown:
+SpringBoot, Angular, AndroidStudio, Java, TypeScript, MySQL, SQLite, Git/Github, HTML, XML.
+
+Certifications
+
+Self-taught, with 3 years of experience in learning and 
+developing both frontend and backend for mobile and web
+applications, I have found a new passion in programming.
+
+I was trained as a Civil Architect at UDG, a profession in 
+which I've been working for 14 years with large teams and 
+leading some small teams in various areas of the 
+profession.
+
+I am currently highly motivated to become an Architect once 
+again, but this time in the realm of software, with a 
+strong interest in software design and development.
+
+Although I still have a long way to go, I am excited to 
+continue this journey in the professional field.
+
+Here's a glimpse of some of my personal projects:
