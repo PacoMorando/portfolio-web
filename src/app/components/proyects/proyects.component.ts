@@ -27,6 +27,6 @@ export class ProyectsComponent implements OnInit {
     this.proyectName = proyectName;
     this.componentSlected = this.proyectsMap.get(proyectName);
     this.proyectModal.show();
-    console.log("Card: " + this.proyectName + " picada");
+    console.log("Card: " + this.proyectName + " picada");//TODO Delet Log
   }
 }
