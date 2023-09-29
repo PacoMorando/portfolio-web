@@ -1,63 +1,85 @@
-<div class="row justify-content-md-between grid ">
-    <div class="row justify-content-md-between grid ">
-        <div class="col-lg sticky-top">
-            <div style="background-color: white;">
-                <h2 id="proyectModalLabel">{{proyectName}}</h2>
-                <section class="mb-3 pb-2">
-                    <a [href]="gitHubURL" target="_blank" class="a-project">
-                        <i class="bi bi-github"></i>
-                        Github repository
-                    </a>
-                    <a [href]="releaseURL" target="_blank" class="a-project">
-                        <i class="bi bi-google-play"></i>
-                        Play store release
-                    </a>
-                </section>
-            </div>
+<div class="row justify-content-between ">
+    <div class="col-lg sticky-top">
+        <div style="background-color: white;">
+            <h2 id="proyectModalLabel">{{proyectName}}</h2>
+            <section class="mb-3 pb-2">
+                <a [href]="gitHubURL" target="_blank" class="a-project">
+                    <i class="bi bi-github"></i>
+                    Github repository
+                </a>
+                <a [href]="releaseURL" target="_blank" class="a-project">
+                    <i class="bi bi-google-play"></i>
+                    Play store release
+                </a>
+            </section>
         </div>
-        <div class="clearfix">
-            <div class="col-lg-5 col-6 text-lg-end float-lg-end pb-lg-5 pb-3">
+    </div>
+    <div class="clearfix pb-5">
+        <div class="col-lg-4
+             col-5 text-lg-end float-lg-end ms-lg-3 pb-3 pb-lg-0">
+            <img src=".\assets\images\project-graphic-ruler\graphic_ruler_icon_350.jpg" alt="App icon"
+                class="img-fluid"> <strong>CAMBIAR ESTA IMAGEN</strong>
+        </div>
+        <!-- <div class="col-lg-5 col-6 text-lg-end float-lg-end pb-lg-5 pb-3">
                 <img src=".\assets\images\graphic_ruler_icon.webp" alt="Descripción" class="img-fluid"
                     style="background-color: white;">
-            </div>
-            <p>
-                A pesar de que en la play store ya existen otras aplicaciones que emulan una regla con valores reales,
-                las que existen parecen estar diseñadas para usuarios generales y para usos genericos. <br>
-                Es por esto que me decidí por diseñar y desarrollar una herramienta más enfocada al uso que le damos los
-                arquitectos y diseñadores a este tipo de herramientas.
-            </p>
-            <p>
-                Las claves para enfocar el diseño fueron:
-            </p>
-            <ul style="font-family: RobotoMono-Regular;">
-                <li>Un set de escalas de uso común fácil de configurar.</li>
-                <li>Una calculadora para convertir valores.</li>
-                <li>Escalas gráficas como referiencia visual.</li>
-                <li>Interfaz sencilla y de facil manejo.</li>
-            </ul>
-           
-        </div>
-        <div class="clearfix mb-3 p-3">
-            <div class="row justify-content-between">
-                <div class="col-2 p-0">
-                    <img src=".\assets\images\graphic_ruler_ss1.webp" alt="" class="img-fluid">
-                </div>
-                <div class="col-2 p-0">
-                    <img src=".\assets\images\graphic_ruler_ss2.webp" alt="" class="img-fluid">
-                </div>
-                <div class="col-2 p-0">
-                    <img src=".\assets\images\graphic_ruler_ss3.webp" alt="" class="img-fluid">
-                </div>
-                <div class="col-2 p-0">
-                    <img src=".\assets\images\graphic_ruler_ss4.webp" alt="" class="img-fluid">
-                </div>
-            </div>
-        </div>
+            </div> -->
         <p>
-            El desarrollo de esta aplicación es un ejercicio que realicé mientras estudiaba sobre arquitectura del
-            software MV*, razón principal por la que el código podría parecer "sobre diseñado" o excesivamente
-            modularizado. Lo que buscaba era poner en práctica los conceptos de diseño de software, así como el
-            reparto de responsabilidades y la interacción entre los paquetes que conforman una arquitectura MVC.
+            A pesar de que en la Play Store ya existen otras aplicaciones que emulan una regla con valores reales, las
+            que existen parecen estar diseñadas para usuarios generales y para usos genéricos. Es por esto que me decidí
+            a diseñar y desarrollar una herramienta más enfocada al uso que le damos los arquitectos y diseñadores a
+            este tipo de herramientas.
         </p>
+        <p>
+            Las claves para enfocar el diseño fueron:
+        </p>
+        <ul style="font-family: RobotoMono-Regular;">
+            <li>Un set de escalas de uso y común fácil de configurar.</li>
+            <li>Una calculadora para convertir valores.</li>
+            <li>Escalas gráficas como referiencia visual.</li>
+            <li>Interfaz sencilla y de facil manejo.</li>
+        </ul>
     </div>
+
+    <div class="container px-2 pb-5">
+        <div class="row">
+            <div class="col-6 col-lg-3 p-3">
+                <img src=".\assets\images\project-graphic-ruler\graphic_ruler_ss1.webp" alt="App screen shot"
+                    class="img-fluid">
+            </div>
+            <div class="col-6 col-lg-3 p-3">
+                <img src=".\assets\images\project-graphic-ruler\graphic_ruler_ss2.webp" alt="App screen shot"
+                    class="img-fluid">
+            </div>
+            <div class="col-6 col-lg-3 p-3">
+                <img src=".\assets\images\project-graphic-ruler\graphic_ruler_ss3.webp" alt="App screen shot"
+                    class="img-fluid">
+            </div>
+            <div class="col-6 col-lg-3 p-3">
+                <img src=".\assets\images\project-graphic-ruler\graphic_ruler_ss4.webp" alt="App screen shot"
+                    class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <h4 class="mb-4">Desarrolo de la aplicación</h4>
+    <p>
+        El desarrollo es un ejercicio que realicé mientras estudiaba sobre arquitectura del software MV* y teoría sobre
+        diseño de software, razón principal por la que el código podría parecer "sobre diseñado" o excesivamente
+        estructurado. Lo que buscaba era poner en práctica conceptos de diseño orientado a objetos, así como el reparto
+        de responsabilidades y la interacción entre los paquetes que conforman una arquitectura MVC.
+    </p>
+    <p>
+        La aplicación utiliza los recursos del dispositivo para poder calcular medidas reales basándose en la densidad
+        de píxeles y la altura en píxeles del dispositivo.
+    </p>
+    <pre>
+        <code>{{projectCode}}</code>
+    </pre>
+    <p>
+        Debido a que esta aplicación muestra una regla basada en el sistema métrico decimal, el dato obtenido en
+        pulgadas es convertido y gestionado desde los paquetes de núcleo de la aplicación (modelos).
+        La intención es que en el futuro la herramienta pueda soportar el sistema inglés además de poder agregar nuevas
+        escalas. Puedes revisar el código <a [href]="gitHubURL" target="_blank" class="a-project m-0">aquí</a>.
+    </p>
 </div>
