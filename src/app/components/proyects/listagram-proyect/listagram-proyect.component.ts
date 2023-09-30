@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./listagram-proyect.component.css']
 })
 export class ListagramProyectComponent {
-
+  protected proyectName: string = "Listagram";
+  protected releaseURL: string = "https://play.google.com/store/apps/details?id=com.sas.listagram";
+  protected gitHubURL: string = "https://github.com/PacoMorando";//TODO FALTA ACTUALIZAR URL DEL REPOSITORIO
 }

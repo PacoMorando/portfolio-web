@@ -1,2 +1,80 @@
-<h1>LISTAGRAM</h1>
-<p>Falta por desarrollar el html</p>
+<div class="row justify-content-between ">
+    <div class="col-lg sticky-top">
+        <div style="background-color: white;">
+            <h2 id="proyectModalLabel">{{proyectName}}</h2>
+            <section class="mb-3 pb-2">
+                <a [href]="gitHubURL" target="_blank" class="a-project">
+                    <i class="bi bi-github"></i>
+                    Github repository
+                </a>
+                <a [href]="releaseURL" target="_blank" class="a-project">
+                    <i class="bi bi-google-play"></i>
+                    Play store release
+                </a>
+            </section>
+        </div>
+    </div>
+    <div class="clearfix pb-5">
+        <div class="col-lg-4
+             col-5 text-lg-end float-lg-end ms-lg-3 pb-3 pb-lg-0">
+            <img src=".\assets\images\listagram\ic_launcher.jpg" alt="App icon" class="img-fluid">
+        </div>
+        <!-- <div class="col-lg-5 col-6 text-lg-end float-lg-end pb-lg-5 pb-3">
+                <img src=".\assets\images\graphic_ruler_icon.webp" alt="Descripción" class="img-fluid"
+                    style="background-color: white;">
+            </div> -->
+        <p>
+            Para este primer proyecto/practica de programación también quise aprovechar la oportunidad de poner en
+            practica conceptos de diseños de interfaces y de experiencia de usuario, ya que mi objetivo era que la
+            aplicación pudiese ser usada con la mayor facilidad posible por familiares y amigos de los qu pudiera
+            recibir retroalimentación, tanto del diseño como de funcionamiento y bugs.
+        </p>
+        <p>
+
+        </p>
+        <p>
+            Las claves para el disño UX/UI fueron:
+        </p>
+        <ul style="font-family: RobotoMono-Regular;">
+            <li>Una intefaz gráfica similar a la de aplicaciones de mensajería para que resulte familiar.</li>
+            <li>Que las listas de gastos sean similares a un "ticket" de super mercado ya que es un formato muy conocido.</li>
+            <li>Paleta de colores accesible WCAG AAA.</li>
+            <li>Nombre fácil de recordar.</li>
+        </ul>
+    </div>
+
+    <div class="container px-2 pb-5">
+        <div class="row px-3">
+            <div class="col-6 col-lg-3 p-0">
+                <img src=".\assets\images\listagram\listagram_ss1.webp" alt="App screen shot" class="img-fluid">
+            </div>
+            <div class="col-6 col-lg-3 p-0">
+                <img src=".\assets\images\listagram\listagram_ss2.webp" alt="App screen shot" class="img-fluid">
+            </div>
+            <div class="col-6 col-lg-3 p-0">
+                <img src=".\assets\images\listagram\listagram_ss3.webp" alt="App screen shot" class="img-fluid">
+            </div>
+            <div class="col-6 col-lg-3 p-0">
+                <img src=".\assets\images\listagram\listagram_ss4.webp" alt="App screen shot" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <h4 class="mb-4">Desarrolo de la aplicación</h4>
+    <p>
+        El desarrollo es un ejercicio que realicé mientras estudiaba sobre arquitectura del software MV* y teoría sobre
+        diseño de software, razón principal por la que el código podría parecer "sobre diseñado" o excesivamente
+        estructurado. Lo que buscaba era poner en práctica conceptos de diseño orientado a objetos, así como el reparto
+        de responsabilidades y la interacción entre los paquetes que conforman una arquitectura MVC.
+    </p>
+    <p>
+        La aplicación utiliza los recursos del dispositivo para poder calcular medidas reales basándose en la densidad
+        de píxeles y la altura en píxeles del dispositivo.
+    </p>
+    <p>
+        Debido a que esta aplicación muestra una regla basada en el sistema métrico decimal, el dato obtenido en
+        pulgadas es convertido y gestionado desde los paquetes de núcleo de la aplicación (modelos).
+        La intención es que en el futuro la herramienta pueda soportar el sistema inglés además de poder agregar nuevas
+        escalas. Puedes revisar el código <a [href]="gitHubURL" target="_blank" class="a-project m-0">aquí</a>.
+    </p>
+</div>
