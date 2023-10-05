@@ -35,70 +35,107 @@
             </div>
         </div>
         <p>
-            A pesar de que en la Play Store ya existen otras aplicaciones que emulan una regla con valores reales, las
-            que existen parecen estar diseñadas para usuarios generales y para usos genéricos. Es por esto que me decidí
-            a diseñar y desarrollar una herramienta más enfocada al uso que le damos los arquitectos y diseñadores a
-            este tipo de herramientas.
+            El objetivo de este ejercicio fue aprender a diseñar sistemas abiertos a la extensión tanto de despliegue
+            como de requisitos implementando un diseño arquitectónico modular. <br>
+            También pone en práctica mis estudios en diseño orientado a objetos, patrones de diseño, arquitectura del
+            software y la metodologías de desarrollo.
         </p>
         <p>
-            Las claves para enfocar el diseño fueron:
+            Como resultado de esto, se logra utilizar el mismo código para desarrollar una aplicación de
+            consola, un aplicación android y una API Rest que es consumida por una aplicación web.
         </p>
-        <ul style="font-family: RobotoMono-Regular;">
-            <li>Un set de escalas de uso y común fácil de configurar.</li>
-            <li>Una calculadora para convertir valores.</li>
-            <li>Escalas gráficas como referiencia visual.</li>
-            <li>Interfaz sencilla y de facil manejo.</li>
-        </ul>
+        <p class="mb-5">
+            <strong>Nota:</strong> <br>
+            Ya que el <a href="https://es.wikipedia.org/wiki/Mastermind" target="_blank" class="a-project m-0">juego</a>
+            tiene reglas muy sensillas, se le agregaron los casos de uso "undo/redo". Aunque hacen que el juego pierda
+            el
+            sentido, se agregaron para complicar un poco más el sistema y tener la posibilidad de poner en práctica
+            algunos patrones de diseño.
+        </p>
+        <h4 class="mb-4">Desarrolo de la aplicación</h4>
+        <p>
+            El núcleo de la aplicación fue desarrollado en Java. Este módulo contiene la lógica del modelo y una capa de
+            controladores que se encarga de controlar el flujo de ejecución del programa, así como gestionar los datos
+            de entrada y salida de la aplicación. <br>
+            El núcleo de la aplicación es agnóstica a las tecnologias de visualización y persistencia, por esto los
+            controladores se acoplan a interfaces abstractas de las capas de vista y persistencia (DAO), dentro del
+            mismo componente, que deberan ser implementadas por cada tecnología correspondiente.
+        </p>
     </div>
+
     <div class="clearfix pb-5">
-        <div class="col-lg-5 col-10 text-lg-end float-lg-start me-lg-3 pb-3 pb-lg-0">
+        <div class="col-lg-5 col-10 text-lg-end float-lg-start me-lg-3 pb-3 py-lg-4">
             <img src=".\assets\images\mastermind\master_mind_core_component.svg" alt="" class="img-fluid">
         </div>
         <p>
-            Sedrasedf  ;okdsjfapoijdsak  Store ya existen otras aplicaciones que emulan una regla con valores reales, las
-            que existen parecen estar diseñadas para usuarios generales y para usos genéricos. Es por esto que me decidí
-            a diseñar y desarrollar una herramienta más enfocada al uso que le damos los arquitectos y diseñadores a
-            este tipo de herramientas.
+            En núcleo de la aplicación se empaqueta para ser importado como una dependencia maven. <br>
+            Este componente expone dos interfaces, una para la tecnologia de visualización y otra para la tecnología de
+            persistencia.
+        </p>
+        <p>
+            Por ejemplo, la aplicación de consola implementa las vistas para mostrar un tablero a base de texto y
+            mostrar los mensajes con la informaicón que extrae del componente núcleo, de esta manera la implementación
+            solo se encarga de imprimir mensajes y validar los datos de entrada del usuario. Para implentar la
+            persistencia utiliza FileWriter para guardar los datos de la partida como texto plano.
         </p>
     </div>
 
+    <p>
+
+        La aplicacion android utiliza su tecnologia de visualizacion (Activities, Framents) y SQLite para la
+        persistencia de partidas. <br>
+        En el caso de la distribución web, desarrollé una API Rest utilizando SpringBoot. La API implementa la interfaz
+        de vistas del núcleo (dependencia maven) como "end points" que se exponen para ser consumidas por una aplicación
+        web que fue desarrollada en Angular. De este modo la lógica y el control de flujo de ejecución permanece en el
+        backend.
+    </p>
 
     <div class="container px-2 pb-5">
-        <div class="row">
-            <div class="col-6 col-lg-3 p-3">
-                <img src=".\assets\images\project-graphic-ruler\graphic_ruler_ss1.webp" alt="App screen shot"
+        <div class="row justify-content-evenly align-items-end gap-4">
+            <div class="col-8 col-lg-4 p-3">
+                <img src=".\assets\images\mastermind\master_mind_movil_client.svg" alt="App screen shot"
                     class="img-fluid">
             </div>
-            <div class="col-6 col-lg-3 p-3">
-                <img src=".\assets\images\project-graphic-ruler\graphic_ruler_ss2.webp" alt="App screen shot"
-                    class="img-fluid">
-            </div>
-            <div class="col-6 col-lg-3 p-3">
-                <img src=".\assets\images\project-graphic-ruler\graphic_ruler_ss3.webp" alt="App screen shot"
-                    class="img-fluid">
-            </div>
-            <div class="col-6 col-lg-3 p-3">
-                <img src=".\assets\images\project-graphic-ruler\graphic_ruler_ss4.webp" alt="App screen shot"
+            <div class="col-8 col-lg-4 p-3">
+                <img src="..\assets\images\mastermind\master_mind_web_client2.svg" alt="App screen shot"
                     class="img-fluid">
             </div>
         </div>
     </div>
 
-    <h4 class="mb-4">Desarrolo de la aplicación</h4>
-    <p>
-        El desarrollo es un ejercicio que realicé mientras estudiaba sobre arquitectura del software MV* y teoría sobre
-        diseño de software, razón principal por la que el código podría parecer "sobre diseñado" o excesivamente
-        estructurado. Lo que buscaba era poner en práctica conceptos de diseño orientado a objetos, así como el reparto
-        de responsabilidades y la interacción entre los paquetes que conforman una arquitectura MVC.
-    </p>
-    <p>
-        La aplicación utiliza los recursos del dispositivo para poder calcular medidas reales basándose en la densidad
-        de píxeles y la altura en píxeles del dispositivo.
-    </p>
-    <p>
-        Debido a que esta aplicación muestra una regla basada en el sistema métrico decimal, el dato obtenido en
-        pulgadas es convertido y gestionado desde los paquetes de núcleo de la aplicación (modelos).
-        La intención es que en el futuro la herramienta pueda soportar el sistema inglés además de poder agregar nuevas
-        escalas. Puedes revisar el código <a [href]="gitHubURL" target="_blank" class="a-project m-0">aquí</a>.
-    </p>
+    <div class="container px-2 py-4">
+        <div class="row px-3">
+            <strong class="p-3 ps-0">Aplicación móvil</strong>
+            <div class="col-6 col-lg-3 py-3 px-0">
+                <img src=".\assets\images\mastermind\mm_ss1.jpg" alt="App screen shot"
+                    class="img-fluid">
+            </div>
+            <div class="col-6 col-lg-3 py-3 px-0">
+                <img src=".\assets\images\mastermind\mm_ss2.jpg" alt="App screen shot"
+                    class="img-fluid">
+            </div>
+            <div class="col-6 col-lg-3 py-3 px-0">
+                <img src=".\assets\images\mastermind\mm_ss3.jpg" alt="App screen shot"
+                    class="img-fluid">
+            </div>
+            <div class="col-6 col-lg-3 py-3 px-0">
+                <img src=".\assets\images\mastermind\mm_ss4.jpg" alt="App screen shot"
+                    class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-2 py-4">
+        <div class="row">
+            <strong class="p-3">Aplicación web</strong>
+            <div class="col-12 col-lg-6 p-3">
+                <img src=".\assets\images\mastermind\mm_ss_web1.jpg" alt="App screen shot"
+                    class="img-fluid">
+            </div>
+            <div class="col-12 col-lg-6 p-3">
+                <img src=".\assets\images\mastermind\mm_ss_web2.jpg" alt="App screen shot"
+                    class="img-fluid">
+            </div>
+        </div>
+    </div>
 </div>
