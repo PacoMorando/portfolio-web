@@ -29,6 +29,122 @@ Aquí una muestra de proyectos personales:
 
 
 
+MULTIPLATFORM GAME
+
+El objetivo de este ejercicio fue aprender a diseñar sistemas abiertos a la extensión tanto de despliegue
+como de requisitos implementando un diseño arquitectónico modular. <br>
+También pone en práctica mis estudios en diseño orientado a objetos, patrones de diseño, arquitectura del
+software y la metodologías de desarrollo.            
+
+Como resultado de esto, se logra utilizar el mismo código para desarrollar una aplicación de
+consola, un aplicación android y una API Rest que es consumida por una aplicación web.
+
+Nota:
+Ya que el juego
+tiene reglas muy sensillas, se le agregaron los casos de uso "undo/redo". Aunque hacen que el juego pierda el
+sentido, se agregaron para complicar un poco más el sistema y tener la posibilidad de poner en práctica
+algunos patrones de diseño.
+
+Desarrolo de la aplicación
+
+El núcleo de la aplicación fue desarrollado en Java. Este módulo contiene la lógica del modelo y una capa de
+controladores que se encarga de controlar el flujo de ejecución del programa, así como gestionar los datos
+de entrada y salida de la aplicación. <br>
+El núcleo de la aplicación es agnóstica a las tecnologias de visualización y persistencia, por esto los
+controladores se acoplan a interfaces abstractas de las capas de vista y persistencia (DAO), dentro del
+mismo componente, que deberan ser implementadas por cada tecnología correspondiente.
+
+El núcleo de la aplicación se empaqueta para ser importado como una dependencia maven. <br>
+Este componente expone dos interfaces, una para la tecnologia de visualización y otra para la tecnología de
+persistencia.
+
+Por ejemplo, la aplicación de consola implementa las vistas para mostrar un tablero a base de texto y
+mostrar los mensajes con la informaicón que extrae del componente núcleo, de esta manera la implementación
+solo se encarga de imprimir mensajes y validar los datos de entrada del usuario. Para implentar la
+persistencia utiliza FileWriter para guardar los datos de la partida como texto plano.
+
+La aplicacion android utiliza su tecnologia de visualizacion (Activities, Framents) y SQLite para la
+persistencia de partidas. <br>
+En el caso de la distribución web, desarrollé una API Rest utilizando SpringBoot. La API implementa la interfaz
+de vistas del núcleo (dependencia maven) como "end points" que se exponen para ser consumidas por una aplicación
+web que fue desarrollada en Angular. De este modo la lógica y el control de flujo de ejecución permanece en el
+backend.
+
+Aplicación móvil
+Aplicación web
+
+
+GRAPHIC RULER
+
+A pesar de que en la Play Store ya existen otras aplicaciones que emulan una regla con valores reales, las
+que existen parecen estar diseñadas para usuarios generales y para usos genéricos. Es por esto que me decidí
+a diseñar y desarrollar una herramienta más enfocada al uso que le damos los arquitectos y diseñadores a
+este tipo de herramientas.
+
+Las claves para enfocar el diseño fueron:
+<ul>
+    <li>Un set de escalas de uso y común fácil de configurar.</li>
+    <li>Una calculadora para convertir valores.</li>
+    <li>Escalas gráficas como referiencia visual.</li>
+    <li>Interfaz sencilla y de facil manejo.</li>
+</ul>
+
+Desarrolo de la aplicación
+
+El desarrollo es un ejercicio que realicé mientras estudiaba sobre arquitectura del software MV* y teoría sobre
+diseño de software, razón principal por la que el código podría parecer "sobre diseñado" o excesivamente
+estructurado. Lo que buscaba era poner en práctica conceptos de diseño orientado a objetos, así como el reparto
+de responsabilidades y la interacción entre los paquetes que conforman una arquitectura MVC.
+
+La aplicación utiliza los recursos del dispositivo para poder calcular medidas reales basándose en la densidad
+de píxeles y la altura en píxeles del dispositivo.
+
+Debido a que esta aplicación muestra una regla basada en el sistema métrico decimal, el dato obtenido en
+pulgadas es convertido y gestionado desde los paquetes de núcleo de la aplicación (modelos).
+La intención es que en el futuro la herramienta pueda soportar el sistema inglés además de poder agregar nuevas
+escalas. Puedes revisar el código aquí.
+
+
+
+LISTAGRAM
+
+La función principal de la aplicación es crear listas de gastos, para llevar un registro y cálculo rápido de
+lo que se ha gastado. <br>
+Posteriormente, decidí agregar listas 'tipo chat' para emular la práctica de utilizar
+ventanas de aplicaciones de mensajería como listas de notas personales.
+
+Para este primer proyecto/práctica de programación, también quise aprovechar la oportunidad de implementar
+conceptos de diseño de interfaces y de experiencia de usuario, ya que mi objetivo era que la aplicación
+pudiera ser usada con la mayor facilidad posible por familiares y amigos de quienes pudiera recibir
+retroalimentación, tanto del diseño como del funcionamiento y errores.
+
+Las claves para el diseño UX/UI fueron:
+<ul>
+    <li>UI similar a la de aplicaciones de mensajería para que resulte familiar.</li>
+    <li>Que las listas de gastos sean similares a un 'ticket' de supermercado, ya que es un formato muy conocido.</li>
+    <li>Paleta de colores accesible según WCAG AAA..</li>
+    <li>Nombre fácil de recordar.</li>
+</ul>
+
+Paleta de colres:
+
+Desarrolo de la aplicación
+
+Esta aplicación la desarrollé mientras estaba estudiando Java. Las aplicaciones Android me venían bien para
+practicar el lenguaje y, al mismo tiempo, poder desarrollar algo que tuviera un despliegue sencillo y accesible
+para compartirlo y recibir retroalimentación de algunos usuarios.
+
+Además, en este desarrollo también aprendí sobre el framework Android Studio, me familiaricé con el ciclo de
+vida de sus vistas (Activities/Fragments), con el "vocabulario" XML que utiliza para declarar sus componentes de
+interfaz gráfica y con la manera de estructurar sus recursos.
+
+Aunque apoyado por la estructura que el framework establece, el código no goza de una escritura y estructura
+demasiado limpia y ordenada, ya que lo desarrollé en una etapa inicial de mi aprendizaje. El código puede
+consultarse aquí.
+
+
+
+
 
 
 
@@ -56,9 +172,13 @@ which I've been working for 14 years with large teams and
 leading some small teams in various areas of the 
 profession.
 
-I am currently highly motivated to become an Architect once 
+*/I am currently highly motivated to become an Architect once 
 again, but this time in the realm of software, with a 
-strong interest in software design and development.
+strong interest in software design and development./*
+
+I also have knowledge in software architecture, 
+object-oriented design, development methodologies such as RUP, 
+and some agile methods, UML, OOP, and design patterns.
 
 Although I still have a long way to go, I am excited to 
 continue this journey in the professional field.
@@ -76,6 +196,7 @@ design. This project is based on a modular design, where the
 application core/business logic is an independent module that 
 exposes the corresponding interfaces so it can be implemented by 
 different technologies for viewing and persistence.
+
 
 
 Graphic Ruler
