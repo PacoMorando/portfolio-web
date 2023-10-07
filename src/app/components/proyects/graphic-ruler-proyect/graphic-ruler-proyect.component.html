@@ -17,23 +17,21 @@
     <div class="clearfix pb-5">
         <div class="col-lg-4
              col-5 text-lg-end float-lg-end ms-lg-3 pb-3 pb-lg-0">
-            <img src=".\assets\images\project-graphic-ruler\graphic_ruler_icon_350.jpg" alt="App icon"
-                class="img-fluid"> <strong>CAMBIAR ESTA IMAGEN</strong>
+            <img src=".\assets\images\project-graphic-ruler\graphic_ruler_icon.svg" alt="App icon" class="img-fluid">
         </div>
         <p>
-            A pesar de que en la Play Store ya existen otras aplicaciones que emulan una regla con valores reales, las
-            que existen parecen estar diseñadas para usuarios generales y para usos genéricos. Es por esto que me decidí
-            a diseñar y desarrollar una herramienta más enfocada al uso que le damos los arquitectos y diseñadores a
-            este tipo de herramientas.
+            Although there are already other applications in the Play Store that emulate a real-value ruler, the
+            existing ones appear to be designed for general users and generic uses. That's why I decided to design and
+            develop a tool more focused on the way architects and designers use this type of tool.
         </p>
         <p>
-            Las claves para enfocar el diseño fueron:
+            The key aspects for focusing the design were:
         </p>
         <ul style="font-family: RobotoMono-Regular;">
-            <li>Un set de escalas de uso y común fácil de configurar.</li>
-            <li>Una calculadora para convertir valores.</li>
-            <li>Escalas gráficas como referiencia visual.</li>
-            <li>Interfaz sencilla y de facil manejo.</li>
+            <li>A set of commonly used and easily configurable scales.</li>
+            <li>A calculator for converting values.</li>
+            <li>Graphic scales for visual reference.</li>
+            <li>A simple and user-friendly interface.</li>
         </ul>
     </div>
 
@@ -58,24 +56,26 @@
         </div>
     </div>
 
-    <h4 class="mb-4">Desarrolo de la aplicación</h4>
+    <h4 class="mb-4">Application development</h4>
     <p>
-        El desarrollo es un ejercicio que realicé mientras estudiaba sobre arquitectura del software MV* y teoría sobre
-        diseño de software, razón principal por la que el código podría parecer "sobre diseñado" o excesivamente
-        estructurado. Lo que buscaba era poner en práctica conceptos de diseño orientado a objetos, así como el reparto
-        de responsabilidades y la interacción entre los paquetes que conforman una arquitectura MVC.
+        The development was an exercise I carried out while studying software architecture (MV*) and software design
+        theory. This is the main reason why the code may seem 'over-designed' or excessively structured. My goal was to
+        put into practice object-oriented design concepts, as well as the distribution of responsibilities and
+        interaction among the packages that make up an MVC architecture.
     </p>
     <p>
-        La aplicación utiliza los recursos del dispositivo para poder calcular medidas reales basándose en la densidad
-        de píxeles y la altura en píxeles del dispositivo.
+
+        The application uses the device's resources to calculate real measurements based on pixel density and device
+        pixel height.
     </p>
     <pre>
         <code>{{projectCode}}</code>
     </pre>
     <p>
-        Debido a que esta aplicación muestra una regla basada en el sistema métrico decimal, el dato obtenido en
-        pulgadas es convertido y gestionado desde los paquetes de núcleo de la aplicación (modelos).
-        La intención es que en el futuro la herramienta pueda soportar el sistema inglés además de poder agregar nuevas
-        escalas. Puedes revisar el código <a [href]="gitHubURL" target="_blank" class="a-project m-0">aquí</a>.
+
+        Because this application displays a ruler based on the metric system, the data obtained in inches is converted
+        and managed from the application's core packages (models). The intention is for the tool to support the English
+        system in the future and to be able to add new scales. You can review the code <a [href]="gitHubURL"
+            target="_blank" class="a-project m-0">here.</a>.
     </p>
 </div>
