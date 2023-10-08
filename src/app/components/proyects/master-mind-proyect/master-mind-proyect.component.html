@@ -68,11 +68,14 @@
             <img src=".\assets\images\mastermind\master_mind_core_component.svg" alt="" class="img-fluid">
         </div>
         <p>
-            The core the application is packaged to be imported as a maven dependency. <br>
+            <a [href]=gitHubURL target="_blank" class="a-project m-0">The application core</a> is packaged to be
+            imported as a maven dependency. <br>
             This component exposes two interfaces, one for the view technology and another for the persistence.
         </p>
         <p>
-            For example, the console application implements views to display a text-based dashboard that shows the
+            For example,<a [href]=gitHubConsoleURL target="_blank" class="a-project m-0">the console application</a>
+            implements
+            views to display a text-based dashboard that shows the
             messages with the information extracted from the core component, thus the implementation
             It is only responsible for printing messages and validating user input data. To implement the persistence it
             uses FileWriter to save game data as plain text.
@@ -80,11 +83,14 @@
     </div>
 
     <p>
-        The android application uses its view technology (Activities, Framents) and SQLite for the persistence of games.
+        <a [href]=gitHubAndroidURL target="_blank" class="a-project m-0">The android application</a> uses its view
+        technology (Activities, Framents) and SQLite for the persistence of games.
         <br>
-        In the case of web distribution, I developed a Rest API using SpringBoot. The API implements the view interface
-        from the core (maven dependency) as "end points" that are exposed to be consumed by an application website that
-        was developed in Angular. In this way the logic and control of execution flow remains in the backend.
+        In the case of web distribution, I developed a <a [href]=gitHubAPIURL target="_blank" class="a-project m-0">Rest
+            API</a> using SpringBoot. The API implements the view interface from the core (maven dependency) as "end
+        points" that are exposed to be consumed by an <a [href]=gitHubWebURL target="_blank"
+            class="a-project m-0">application website</a> that was developed in Angular. In this way the logic and
+        control of execution flow remains in the backend.
     </p>
 
     <div class="container px-2 pb-5">

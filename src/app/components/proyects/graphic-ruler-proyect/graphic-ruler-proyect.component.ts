@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class GraphicRulerProyectComponent {
   protected proyectName: string = "Graphic Ruler";
   protected releaseURL: string = "https://play.google.com/store/apps/details?id=com.sas.graphicruler";
-  protected gitHubURL: string = "https://github.com/PacoMorando";//TODO FALTA ACTUALIZAR URL DEL REPOSITORIO
+  protected gitHubURL: string = "https://github.com/PacoMorando/GraphicRuler";//TODO FALTA ACTUALIZAR URL DEL REPOSITORIO
   protected projectCode: string = `
 package com.sas.graphicruler.views;
 
