@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class MasterMindProyectComponent {
   protected proyectName: string = "Master Mind";
-  protected releaseURL: string = "https://play.google.com/store/apps/developer?id=Saturn+Apple+Studios";
+  protected releaseURL: string = "https://play.google.com/store/apps/details?id=sas.mastermind.android";
   protected gitHubURL: string = "https://github.com/PacoMorando/multiplatform-master-mind";
   protected gitHubCoreURL: string = "https://github.com/PacoMorando/master-mind-core";
   protected gitHubConsoleURL: string = "https://github.com/PacoMorando/master-mind-console";
