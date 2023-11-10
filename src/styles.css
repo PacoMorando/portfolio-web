@@ -20,6 +20,16 @@
     font-family: 'RobotoMono-Bold', monospace;
   }
 
+  h4{
+    text-decoration: underline;
+  }
+
+  #link{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+  }
+
   .a-project {
     color: black;
     margin-right: 20px;
