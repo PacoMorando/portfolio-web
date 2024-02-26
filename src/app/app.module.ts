@@ -7,6 +7,7 @@ import { ProyectsComponent } from './components/proyects/proyects.component';
 import { MasterMindProyectComponent } from './components/proyects/master-mind-proyect/master-mind-proyect.component';
 import { GraphicRulerProyectComponent } from './components/proyects/graphic-ruler-proyect/graphic-ruler-proyect.component';
 import { ListagramProyectComponent } from './components/proyects/listagram-proyect/listagram-proyect.component';
+import { ExercisesComponent } from './components/proyects/exercises/exercises.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ListagramProyectComponent } from './components/proyects/listagram-proye
     ProyectsComponent,
     MasterMindProyectComponent,
     GraphicRulerProyectComponent,
-    ListagramProyectComponent
+    ListagramProyectComponent,
+    ExercisesComponent
   ],
   imports: [
     BrowserModule

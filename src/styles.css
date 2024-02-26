@@ -24,6 +24,10 @@
     text-decoration: underline;
   }
 
+  .subtitle{
+    text-decoration: none;
+  }
+
   #link{
     cursor: pointer;
     color: black;

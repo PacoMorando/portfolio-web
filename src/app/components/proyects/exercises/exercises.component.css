@@ -1,0 +1,9 @@
+.angular_icon {
+    width: 16px; 
+    height: 22.5px;
+    background-image: url('src/assets/images/angular.svg'); 
+    background-size: contain;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center;
+    display: inline-block; 
+}
