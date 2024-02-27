@@ -14,4 +14,5 @@ export class ExercisesComponent {
   protected meliWebApp: string = "https://pacomorando.github.io/practica-product-search";
   protected meliAngular: string = "https://github.com/PacoMorando/practica-product-search";
   protected meliAndroid: string = "https://github.com/PacoMorando/practica-product-search-android";
+  protected portfolioAngular: string = "https://github.com/PacoMorando/portfolio-web";
 }
